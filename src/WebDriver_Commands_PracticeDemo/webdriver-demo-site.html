@@ -1,0 +1,102 @@
+<html>
+<head>
+<title>WebDriver Practice Example site</title>
+</head>
+<body>
+<div>
+<BR/>
+<h2>Check Box Demo</h2>
+  <input type="checkbox" name="drive" checked/>
+  <label>Do You Know to Drive?</label>
+</br>
+
+<h2>Radio Button Demo</h2>
+ <fieldset>
+<legend>Choose what interest you</legend>
+      <label>What do you want to learn?</label>
+      <input type="radio" name="what-to-learn" value="HTML">HTML
+      <input type="radio" name="what-to-learn" value="CSS" checked>CSS
+      <input type="radio" name="what-to-learn" value="AUT">Automation Testing
+      <input type="radio" name="what-to-learn" value="JAVA">Java
+  </fieldset>
+</div>
+
+<div>
+<h2>Single Selection Example</h2>
+<select name="Mobiles"><option value="0" selected> Please select</option>
+<option value="1">iPhone</option>
+<option value="2">Nokia</option>
+<option value="3">Samsung</option>
+<option value="4">HTC</option>
+<option value="5">BlackBerry</option>
+</select>
+</div>
+
+<div>
+<h2>Multiple Selection Example</h2>
+<select name="Mobdevices" multiple="multiple"><option value="0" selected> Please select</option>
+<option value="1">iPhone</option>
+<option value="2">Nokia</option>
+<option value="3">Samsung</option>
+<option value="4">HTC</option>
+<option value="5">BlackBerry</option>
+</select>
+</div>
+
+<div>
+<h2>Alert Box Example</h2>
+<fieldset>
+<legend>Alert Box</legend><p>Click the button to display an alert box.</p>
+<button onclick="alertFunction()">Click on me</button>
+<script>
+function alertFunction()
+{
+alert("I am an example for alert box!");
+}
+</script>
+</fieldset>
+</div>
+<div>
+
+<h2>Prompt Box Example</h2>
+<fieldset>
+<legend>Prompt Box</legend>
+<p>Click the button to demonstrate the prompt box.</p>
+<button onclick="promptFunction()">Click on me</button>
+<p id="promptdemo"></p>
+<script>
+function promptFunction()
+{
+var x;
+var person=prompt("Please enter your name","Your name");
+if (person!=null)
+  {
+  x="Hello " + person + "! Welcome to Selenium Easy..";
+  document.getElementById("promptdemo").innerHTML=x;
+  }
+}
+</script>
+</fieldset>
+</div>
+
+<br/>
+<div>
+ <h2>iFrame Example</h2>  
+    <iframe src="http://www.in28minutes.com" height="400px" width="1000px">
+        IFrame is Not Supported</iframe>
+</div>
+
+<div>
+<h2>New Tab window to LinkedIn page</h2>  
+<section class="subscribe-wrapper" id="subscribe">
+<div class="container">
+<div class="ud-newsletter-form">
+<a target="_blank" href="https://www.linkedin.com/newsletters/6978624731038023681/"><img src="/images/newsletter.png" /></a>
+</div>
+</div>
+</section>
+
+</div>
+    
+</body>
+</html>
